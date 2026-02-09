@@ -32,7 +32,7 @@ function renderTask(task){
     <button>delete</button>
     `;
     li.addEventListener('click', (e) => {
-        if(e.target.tageName === 'BUTTON') return;
+        if(e.target.tagName === 'BUTTON') return;
         task.completed = !task.completed
         li.classList.toggle('completed')
         saveTasks()
